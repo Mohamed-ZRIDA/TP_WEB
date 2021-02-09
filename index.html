@@ -40,6 +40,7 @@
       </div>
 	  
 		 <div >
+		   <div id="SousseBlock" style = "visibility:hidden";>
             <h2 align="center" class="ttt" style ="background-image: url('img/sky.png')">Sousse</h2>
             <p align="center" class = "ccc" style ="background-image: url('img/sky.png')"> <FONT size="20pt"> 23º C </FONT> 
 			<br> <FONT size="4pt"> <b> Ensoleillé </b> </FONT> <br> <FONT size="4pt"> Précipitations: 0 % </FONT>
@@ -47,9 +48,11 @@
 			<br>
                <img src="img\sun.png" width="200" />
             </p>
+		   </div>
 		 </div>
 		 
 		 <div >
+		   <div id="BarceloneBlock" style = "visibility:hidden";>
               <h2 align="center" class="ttt" style ="background-image: url('img/rainysky.png')">Barcelone</h2>
             <p align="center" class="ccc" style ="background-image: url('img/rainysky.png')"> <FONT size="20pt"> 10º C </FONT> 
 			<br> <FONT size="4pt"> <b> Pluvieux </b> </FONT> <br> <FONT size="4pt"> Précipitations: 70 % </FONT>
@@ -58,9 +61,11 @@
                <img src="img\rain.png" width="200" />
             </p>
 			
+		   </div>
 		 </div>
 		 
 		 <div >
+		   <div id="LondresBlock" style = "visibility:hidden";>
              <h2 align="center" class="ttt" style ="background-image: url('img/stormysky.png')">Londres</h2>
             <p align="center" class="ccc" style ="background-image: url('img/stormysky.png')"> <FONT size="20pt"> 3º C </FONT> 
 			<br> <FONT size="4pt"> <b> Orageux </b> </FONT> <br> <FONT size="4pt"> Précipitations: 30 % </FONT> 
@@ -68,7 +73,7 @@
 			<br>
                <img src="img\storm.png" width="200" />
             </p>
-			
+		   </div >	
 		 </div >
 		 
       </div>
@@ -83,6 +88,51 @@
 		 
      </footer>
 	  
-   </body>  
+   </body> 
+
+<script type="text/javascript">
+      var Sousse = document.getElementById("SousseBlock");
+      var Barcelone = document.getElementById("BarceloneBlock");
+      var Londres = document.getElementById("LondresBlock");
+      
+      function showCity()
+      {
+      	var element = document.getElementById("villes").value;
+      if (element == "selection") 
+      {
+      
+           Sousse.style.visibility = "hidden";
+              Barcelone.style.visibility = "hidden";
+              Londres.style.visibility = "hidden";
+      
+      }
+      
+      else if(element=="Sousse")
+       {
+       	        Sousse.style.visibility = "visible";
+                Barcelone.style.visibility = "hidden";
+                Londres.style.visibility = "hidden";
+       }
+      else if(element=="Barcelone")
+       {
+       	        Sousse.style.visibility  = "hidden";
+              	Barcelone.style.visibility = "visible";
+              	Londres.style.visibility = "hidden";
+       }
+      else if(element=="Londres")
+       {
+       	        Sousse.style.visibility  = "hidden";
+              	Barcelone.style.visibility = "hidden";
+              	Londres.style.visibility = "visible";
+       }
+	   else if(element=="Tout")
+       {
+       	        Sousse.style.visibility = "visible";
+                Barcelone.style.visibility = "visible";
+                Londres.style.visibility = "visible";
+       }
+      
+      }          
+   </script>   
  
 </html>
