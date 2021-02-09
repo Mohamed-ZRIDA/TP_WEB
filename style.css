@@ -1,0 +1,63 @@
+
+.outer-div
+{
+  padding: 30px;
+  background-color: #FEFEFE;
+}
+.inner-div
+{
+  margin: 0 auto;
+  max-width: 1300px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 2px;
+}
+
+
+
+Resour
+#titre
+
+{
+  border: solid black 3px;
+    margin: 0 auto;
+    margin-top: 100px;
+    width : 1024px;
+}
+
+.ttt 
+
+{
+  line-height: 35px;
+  border: 2px solid #333;
+}
+
+.ccc
+{
+  padding-top:16px;
+  line-height: 23px;
+  border: 2px solid #333;
+  width: 200px;
+}
+
+
+#footer
+{
+  background:rgb(225, 223, 223); 
+  position:relative;
+  bottom:0; 
+  width:100%; 
+  padding-top:3px; 
+  padding-bottom:1px; 
+  height:40px; 
+  }
+
+ 
+.flex  
+ {
+display : flex;
+justify-content : space-evenly;
+width : 350; 
+flex-wrap : wrap; 
+position: center;
+}
