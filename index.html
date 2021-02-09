@@ -16,12 +16,27 @@
 	  
    </head>
    
-   <body onload="showCity()">
+   <body>
 	  
       <div class="flex">
 	  <div class="outer-div">
          <div class="inner-div" style="width: 1300px;  padding-top:10px; padding-bottom:20px;border: 2px solid #000000; text-align: center;background: #5A5A5A;"
             > <FONT size="6pt"> <FONT color="white"> <b> TP METEO HTML </b> </FONT> </FONT> </div>
+      </div>
+	  
+	   <div>
+   
+         <select onchange="showCity()" name="villes" id="villes">
+		 
+            <option value="selection">--- Sélectionner une ville ---</option>
+            <option value="Sousse">Sousse</option>
+            <option value="Barcelone">Barcelone</option>
+            <option value="Londres">Londres</option>
+			<option value="Tout">Toutes les villes</option>
+			
+			
+         </select>
+		 
       </div>
 	  
 		 <div >
